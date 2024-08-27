@@ -1,0 +1,26 @@
+# Archivos y carpetas del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos generados por editores de texto y entornos de desarrollo
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales del navegador
+.cache/
+.cache-loader/
+
+# Archivos de construcción o de despliegue
+dist/
+build/
+node_modules/
+
+# Archivos de configuración locales (si aplican)
+.env
+.local/
