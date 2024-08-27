@@ -48,15 +48,53 @@ h2 {
     color: #333;
 }
 
+/* Estilos para la galería de productos */
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .producto {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    /* Ajusta este ancho según sea necesario */
+    transition: transform 0.3s ease;
 }
 
 .producto img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
+
+.producto-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.producto h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+
 
 footer {
     background-color: #333;
@@ -71,6 +109,7 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* Responsive */
 @media (min-width: 768px) {
 
     .header-container,
