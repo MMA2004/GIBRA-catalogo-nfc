@@ -128,3 +128,25 @@ footer p {
         margin-right: 20px;
     }
 }
+
+.especificaciones-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+.especificaciones-imagen {
+    max-width: 35%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 0;
+}
+
+.especificaciones-contenido ul {
+    max-width: 50%;
+    list-style-type: none;
+    padding: 0;
+}
