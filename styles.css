@@ -133,12 +133,13 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 200px;
+    margin-right: 100px;
     margin-left: 10px;
+    flex-wrap: wrap;
 }
 
 .especificaciones-imagen {
-    max-width: 325px;
+    max-width: 35%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -149,4 +150,29 @@ footer p {
     max-width: 50%;
     list-style-type: none;
     padding: 0;
+}
+
+@media (max-width: 768px) {
+    .especificaciones-contenido {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .especificaciones-imagen {
+        max-width: 70%;
+        /* Aumenta el tamaño de la imagen en dispositivos móviles */
+        margin-top: 20px;
+        /* Añade un espacio entre el texto y la imagen */
+    }
+
+    .especificaciones-contenido ul {
+        max-width: 100%;
+        /* Asegura que el texto ocupe todo el ancho disponible */
+        margin-right: 0;
+        /* Elimina el margen en dispositivos pequeños */
+    }
 }
